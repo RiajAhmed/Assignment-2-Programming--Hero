@@ -8,7 +8,7 @@
 }
 /* Navbar */
 header {
-  width: 1340px;
+  width: 1380px;
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -75,6 +75,57 @@ nav ul li {
   background-color: #333;
   margin: 5px 0;
 }
+/*Banner Style*/
+.banner {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin: 0px auto;
+  background: F7F7F7;
+}
+
+#empowering {
+  color: rgb(254, 163, 1);
+}
+#towards-vision {
+  color: rgb(1, 172, 253);
+}
+.banner-title {
+  color: rgb(17, 17, 17);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.banner-description {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.banner-button {
+  justify-content: center;
+  align-items: center;
+  padding: 17px 34px 17px 34px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  background: rgb(17, 17, 17);
+}
+.hero-kid {
+  width: 468px;
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   nav ul,
@@ -84,5 +135,20 @@ nav ul li {
   }
   .menu-icon {
     display: flex; /* Show the menu icon on mobile */
+  }
+  .hero-kid {
+    width: 100%;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-title,
+  .banner-description {
+    text-align: center;
   }
 }
