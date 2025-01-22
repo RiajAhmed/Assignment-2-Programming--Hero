@@ -8,8 +8,7 @@
 }
 /* Navbar */
 header {
-  width: 1380px;
-  height: 100px;
+  max-width: 1380px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -77,7 +76,7 @@ nav ul li {
 }
 /*Banner Style*/
 .banner {
-  width: 1050px;
+  max-width: 1080px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,7 +95,7 @@ nav ul li {
 }
 .banner-title {
   color: rgb(17, 17, 17);
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 61px;
   letter-spacing: 0%;
@@ -124,10 +123,84 @@ nav ul li {
   background: rgb(17, 17, 17);
 }
 .hero-kid {
-  width: 468px;
+  max-width: 468px;
 }
+
+/* Footer */
+footer {
+  max-width: 1070px;
+  max-height: 222px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(1, 172, 253);
+  padding: 140px 123px 143px 174px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 60px;
+  margin-right: 10px;
+}
+.kids-school p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-right: 20px;
+}
+.about-school {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0%;
+  text-align: left;
+  padding: 50px;
+  color: #fff;
+}
+
+.about-school h3 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.about-school-content ul {
+  margin: 0;
+  padding: 0;
+}
+.about-school-content ul li {
+  list-style: none;
+}
+.about-school-content ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.social-media h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  gap: 20px;
+  text-align: left;
+  margin-right: 20px;
+  color: #fff;
+}
+.social-media-icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   nav ul,
   header h3,
   header .contact-button {
@@ -136,9 +209,7 @@ nav ul li {
   .menu-icon {
     display: flex; /* Show the menu icon on mobile */
   }
-  .hero-kid {
-    width: 100%;
-  }
+
   .banner {
     flex-direction: column-reverse;
     justify-content: center;
