@@ -474,6 +474,8 @@ main {
   overflow: hidden;
   animation: scroll-left 15s linear infinite;
   margin-bottom: 20px;
+  margin-left: 10px;
+  color: red;
   background-color: rgb(60, 216, 232);
   padding: 10px;
 }
